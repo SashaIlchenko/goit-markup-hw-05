@@ -476,6 +476,13 @@ img {
 
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 100;
+    transition: visibility var(--transition-dur-fun), opacity var(--transition-dur-fun);
+}
+
+.backdrop.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .modal {
